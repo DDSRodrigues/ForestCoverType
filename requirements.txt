@@ -1,0 +1,94 @@
+# Ambiente Base - Projeto de Otimização Industrial e Machine Learning
+# Responsável: Douglas Rodrigues
+# 14/05/2026
+# Comando de execução: pip install -r requirements.txt
+# Versão: 02
+
+# --- Passos para Configuração do Ambiente ---
+# Instalar os pacotes do requirements.txt usando o comando de execução no terminal: pip install -r requirements.txt
+# Criar um arquivo .gitignore na raiz do projeto e adicionar o '.env' para evitar que as credenciais sejam versionadas.
+# Criar um arquivo '.env' na raiz do projeto.
+# Colocar as seguintes variáveis de ambiente no arquivo '.env':
+# AZURE_STORAGE_CONNECTION_STRING=DefaultEndpointsProtocol=https;AccountName=<storage-account>;AccountKey=<storage-account-key>;EndpointSuffix=core.windows.net
+# AZURE_STORAGE_CONTAINER_NAME=<storage-container-name>
+# Em 'AZURE_STORAGE_CONNECTION_STRING', inserir as credenciais reais do Azure Storage apenas no arquivo .env local.
+# Em 'AZURE_STORAGE_CONTAINER_NAME', inserir o nome real do container/pasta do Azure Storage apenas no arquivo .env local.
+# Colocar o '.env' e '.venv/' no .gitignore para evitar que as credenciais sejam versionadas.
+# Lembrar de atualizar os notebooks com as funções de leitura e escrita para utilizar as variáveis de ambiente do Azure Storage.
+
+# --- Pacotes Necessários para os Projetos ---
+# Manipulação de Dados
+pandas
+numpy
+openpyxl
+xlrd
+pathlib
+polars
+pyarrow
+
+# Visualização de Dados
+matplotlib
+seaborn
+plotly
+missingno
+ipywidgets
+qrcode[pil]
+streamlit-autorefresh
+streamlit
+
+# Machine Learning (Predição)
+scikit-learn
+mord==0.7
+xgboost
+lightgbm
+catboost
+
+# Hiperparâmetros e Otimização
+optuna
+optuna-integration
+
+# Estatística e Controle de Processo (Moderno e Estável)
+scipy
+statsmodels
+adtk
+metrics
+
+# Desenvolvimento e Notebooks
+notebook
+ipykernel
+
+# Conectividade e Banco de Dados
+sqlalchemy
+pyodbc
+
+# Azure Storage
+azure-storage-blob==12.28.0
+python-dotenv==1.2.2
+
+# Otimização e Séries Temporais
+pulp
+prophet
+
+# Interpretabilidade (Explicar o "Porquê" do modelo)
+shap
+alibi
+
+# Dashboards Rápidos para a Fábrica
+streamlit
+sweetviz
+
+# Instaladores e Compiladores para Distribuição
+pyinstaller
+nuitka
+
+# Extrator de informação
+beautifulsoup4
+
+# Manipulação de imagens
+pillow
+
+# Deeplearn
+torch
+tensorflow
+torchvision
+transformers
